@@ -10,34 +10,42 @@ if (isset($_POST['button-send-business'])) {
     $email = $_POST['business-email'];
     $phone = $_POST['business-phone'];
 
-    $mailTo = "andrewstsai@gmail.com";
-    $headers = "From: ".$email;
-    $subject = $name."\n".$type."\n".$website."\n".$zip."\n".$first."\n".$last."\n".$email."\n".$phone."\n";
-    $txt = "Business Application Received From ".$name;
-    mail($mailTo,$subject,$txt,$headers);
-}
+    if(empty(name)){
+        $valErr .= "Please enter your business's name.<br/>";
+    }
+    if(empty(type)){
+        $valErr .= "Please enter your business's type.<br/>";
+    }
+    if(empty(website)){
+        $valErr .= "Please enter your business's website.<br/>";
+    }
+    if(empty(zip)){
+        $valErr .= "Please enter your business's zip code.<br/>";
+    }
+    if(empty(first)){
+        $valErr .= "Please enter your first name.<br/>";
+    }
+    if(empty(last)){
+        $valErr .= "Please enter your last name.<br/>";
+    }
+    if(empty(email) || filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+        $valErr .= "Please enter a valid email address.<br/>";
+    }
+    if(empty(phone)){
+        $valErr .= "Please enter your phone number.<br/>";
+    }
 
-// Get data from form 
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
- 
-$to = "yourEmail@gmail.com";
-$subject = "This is the subject line";
- 
-// The following text will be sent
-// Name = user entered name
-// Email = user entered email
-// Message = user entered message
-$txt ="Name = ". $name . "\r\n  Email = "
-    . $email . "\r\n Message =" . $message;
- 
-$headers = "From: noreply@demosite.com" . "\r\n" .
-            "CC: somebodyelse@example.com";
-if($email != NULL) {
-    mail($to, $subject, $txt, $headers);
+    if(empty($valErr)){
+        $mailTo = "andrewstsai@gmail.com";
+        $headers = "From: ".$email;
+        $subject = $name."\n".$type."\n".$website."\n".$zip."\n".$first."\n".$last."\n".$email."\n".$phone."\n";
+        $txt = "Business Application Received From ".$name;
+        mail($mailTo,$subject,$txt,$headers);
+        $statusMsg = "Thank you, your business application has been submitted successfully, we'll get back to you soon.";
+    } else {
+        $statusMsg = "<p>Please fill out all mandatory fields:</p>".trim($valErr,"</br>");
+    }
+    
+
 }
- 
-// Redirect to
-header("Location:last.html");
 ?>

@@ -34,9 +34,22 @@
     <div id="business-application-header-2">
         <p>contact info</p> 
     </div>
-    <div id="button-send-business">
-        <input type="button" class="button" value="Send">
-    </div> 
+    <form class="contact-form" method="POST" action="contactform.php">
+        <input name="business-name" type="text" placeholder="Business Name*"/>
+        <input name="business-type" type="text" placeholder="Business Type*"/>
+        <input name="business-website" type="text" placeholder="Website"/>
+        <input name="business-zipcode" type="text" placeholder="Zip Code"/>
+        <input name="business-first-name" type="text" placeholder="First Name*"/>
+        <input name="business-last-name" type="text" placeholder="Last Name*"/>
+        <input name="business-email" type="text" placeholder="Email"/>
+        <input name="business-phone" type="text" placeholder="Phone Number*"/>
+        <div id="button-send-business">
+            <input type="button" class="button" value="Send">
+        </div> 
+        <!-- <p><input type="submit" value="Send" /></p> -->
+    </form>
+    
+    
 
 </body>
 </html>

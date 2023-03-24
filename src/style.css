@@ -514,6 +514,15 @@ footer{
     bottom: 20%;
 }
 
+#contact-background{
+    position: absolute;
+    z-index: -1;
+    left: 57.47%;
+    right: 0%;
+    top: 0%;
+    bottom: 20%;
+}
+
 #business-application-header-1{
     position: absolute;
     width: 15.78%;

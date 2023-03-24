@@ -1,7 +1,3 @@
-<?php
-include_once 'contact.php';
-?>
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -37,22 +33,17 @@ include_once 'contact.php';
     <div id="business-application-header-2">
         <p>contact info</p> 
     </div>
-    <!-- status message -->
-    <?php if(!empty($statusMsg)){ ?>
-    <div class="status-msg <?php echo $statusMsg; ?>"></div>
-    <?php } ?>
-
 
     <!-- form -->
     <form class="contact-form" method="POST" action="contactform.php">
-        <input name="business-name" type="text" placeholder="Business Name*" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>"/>
-        <input name="business-type" type="text" placeholder="Business Type*" value="<?php echo !empty($postData['type'])?$postData['type']:''; ?>"/>
-        <input name="business-website" type="text" placeholder="Website*" value="<?php echo !empty($postData['website'])?$postData['website']:''; ?>"/>
-        <input name="business-zipcode" type="text" placeholder="Zip Code*" value="<?php echo !empty($postData['zipcode'])?$postData['zipcode']:''; ?>"/>
-        <input name="business-first-name" type="text" placeholder="First Name*" value="<?php echo !empty($postData['first'])?$postData['first']:''; ?>"/>
-        <input name="business-last-name" type="text" placeholder="Last Name*" value="<?php echo !empty($postData['last'])?$postData['last']:''; ?>"/>
-        <input name="business-email" type="text" placeholder="Email*" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>"/>
-        <input name="business-phone" type="text" placeholder="Phone Number*" value="<?php echo !empty($postData['phone'])?$postData['phone']:''; ?>"/>
+        <input name="business-name" type="text" placeholder="Business Name*"/>
+        <input name="business-type" type="text" placeholder="Business Type*"/>
+        <input name="business-website" type="text" placeholder="Website*"/>
+        <input name="business-zipcode" type="text" placeholder="Zip Code*"/>
+        <input name="business-first-name" type="text" placeholder="First Name*"/>
+        <input name="business-last-name" type="text" placeholder="Last Name*"/>
+        <input name="business-email" type="text" placeholder="Email*"/>
+        <input name="business-phone" type="text" placeholder="Phone Number*"/>
         <div id="button-send-business">
             <input type="button" class="button" value="Send">
         </div> 

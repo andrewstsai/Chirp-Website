@@ -1,3 +1,7 @@
+<?php
+include_once 'contact-us.php';
+?>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -27,12 +31,12 @@
     <div id="contact-background">
         <img src="images/contact-background.png">
     </div>
-    <!-- <div id="business-application-header-1">
-        <p>let&#39;s get chirping</p> 
+    <div id="contact-us-header">
+        <p>let&#39;s chat!</p> 
     </div>
-    <div id="business-application-header-2">
-        <p>contact info</p> 
-    </div> -->
+    <div id="contact-us-header-2">
+        <p>Chirp is just getting started, so we&#39;re more than happy to answer any questions! We&#39;d also love to hear how we&#39;re doing so share any feedback you have with us :&#41</p> 
+    </div>
 
 </body>
 </html>

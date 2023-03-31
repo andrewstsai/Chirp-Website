@@ -1,5 +1,5 @@
 <?php
-include_once 'contact.php';
+include_once 'business-application.php';
 ?>
 <!DOCTYPE html>
 <html>

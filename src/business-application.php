@@ -44,17 +44,25 @@ include_once 'business-application.php';
 
 
     <!-- form -->
-    <form class="contact-form" method="POST" action="contactform.php">
-        <input name="business-name" type="text" placeholder="Business Name*" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>"/>
+    <form class="business-contact-form" method="POST" action="business-contact-handler.php">
+        <input name="business-name" type="text" placeholder="Business Name*" required/>
+        <input name="business-type" type="text" placeholder="Business Type*" required/>
+        <input name="business-website" type="text" placeholder="Website*" required/>
+        <input name="business-zipcode" type="text" placeholder="Zip Code*" required/>
+        <input name="business-first-name" type="text" placeholder="First Name*" required/>
+        <input name="business-last-name" type="text" placeholder="Last Name*" required/>
+        <input name="business-email" type="text" placeholder="Email*" required/>
+        <input name="business-phone" type="text" placeholder="Phone Number*" required/>
+        <!-- <input name="business-name" type="text" placeholder="Business Name*" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>"/>
         <input name="business-type" type="text" placeholder="Business Type*" value="<?php echo !empty($postData['type'])?$postData['type']:''; ?>"/>
         <input name="business-website" type="text" placeholder="Website*" value="<?php echo !empty($postData['website'])?$postData['website']:''; ?>"/>
         <input name="business-zipcode" type="text" placeholder="Zip Code*" value="<?php echo !empty($postData['zipcode'])?$postData['zipcode']:''; ?>"/>
         <input name="business-first-name" type="text" placeholder="First Name*" value="<?php echo !empty($postData['first'])?$postData['first']:''; ?>"/>
         <input name="business-last-name" type="text" placeholder="Last Name*" value="<?php echo !empty($postData['last'])?$postData['last']:''; ?>"/>
         <input name="business-email" type="text" placeholder="Email*" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>"/>
-        <input name="business-phone" type="text" placeholder="Phone Number*" value="<?php echo !empty($postData['phone'])?$postData['phone']:''; ?>"/>
+        <input name="business-phone" type="text" placeholder="Phone Number*" value="<?php echo !empty($postData['phone'])?$postData['phone']:''; ?>"/> -->
         <div id="button-send-business">
-            <input type="button" class="button" value="Send">
+            <button type="submit" class="button">Send</button>
         </div> 
         <!-- <p><input type="submit" value="Send" /></p> -->
     </form>

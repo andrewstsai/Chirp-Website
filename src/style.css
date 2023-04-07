@@ -93,8 +93,6 @@ header{
     padding: 30px 30px;
 } 
 
-
-
 #menu{
     padding: 65px;
     padding-right: 90px;
@@ -140,7 +138,6 @@ footer1{
     position: absolute;
     width: 100%;
     overflow: hidden;
-    /* bottom: 0; */
     top:3450px;
     z-index: 1;
 }
@@ -149,7 +146,6 @@ footer2{
     position: absolute;
     width: 100%;
     overflow: hidden;
-    /* bottom: 0; */
     top:2200px;
     z-index: 1;
 }
@@ -182,7 +178,6 @@ footer2{
     text-decoration: none;
     font-weight: 200;
     font-size: 30px;
-    /* text-transform: lowercase; */
     line-height: 60px;
 }
      
@@ -202,7 +197,6 @@ footer2{
 
 #home-mockup-1{
     position: absolute;
-    /* right: 200px; */
     right: 10.4%;
     top: 200px;
     z-index: -1;
@@ -246,14 +240,12 @@ footer2{
     height: 184px;
     left: 27%;
     top: 1400px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     text-align: center;
-    
     color: #FFFFF5;
 }
 
@@ -263,14 +255,12 @@ footer2{
     height: 50px;
     left: 16.5%;
     top: 1850px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    
     color: #FFFFF5;
 }
 
@@ -280,14 +270,12 @@ footer2{
     height: 50px;
     left: 42%;
     top: 1850px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    
     color: #FFFFF5;
 }
 
@@ -297,14 +285,12 @@ footer2{
     height: 50px;
     left: 68%;
     top: 1850px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    
     color: #FFFFF5;
 }
 
@@ -325,7 +311,6 @@ footer2{
     height: 144px;
     left: 4.01%;
     top: 368px;
-    
     font-family: 'Inder';
     font-style: normal;
     font-weight: 400;
@@ -334,7 +319,6 @@ footer2{
     display: flex;
     align-items: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;    
 }
 
@@ -344,7 +328,6 @@ footer2{
     height: 200.03px;
     left: 2.7%;
     top: 460px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -352,7 +335,6 @@ footer2{
     line-height: 39px;
     text-align: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;
 }
 
@@ -362,7 +344,6 @@ footer2{
     height: 144px;
     left: 77px;
     top: 368px;
-    
     font-family: 'Inder';
     font-style: normal;
     font-weight: 400;
@@ -371,7 +352,6 @@ footer2{
     display: flex;
     align-items: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;    
 }
 
@@ -381,7 +361,6 @@ footer2{
     height: 200.03px;
     left: 3.85%;
     top: 500px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -389,7 +368,6 @@ footer2{
     line-height: 39px;
     text-align: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;
 }
 
@@ -399,7 +377,6 @@ footer2{
     height: 63.77px;
     left: 26.88%;
     top: 491px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -407,9 +384,7 @@ footer2{
     line-height: 39px;
     text-align: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;
-    
 }
 
 #synopsis{
@@ -418,29 +393,24 @@ footer2{
     height: 296px;
     left: 4.38%;
     top: 618px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
-    
     color: #3E3E3E;
 }
 
 .button {
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     width: 100%;
     height: 77px;
-
     border-radius: 56.5px; 
     border: none; 
     background-color: #FE6C2C;
     color: white;
-    
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -448,24 +418,17 @@ footer2{
     font-size: 28px;
     margin: 4px 2px;
     cursor: pointer;
-    
-
 }
 
 .button2 {
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    /* width: 100%; */
     width: 50%;
     height: 77px;
-
     border-radius: 56.5px; 
     border: 3px solid #F2BEFF; 
-    /* background-color: #F2BEFF; */
-    color: #F2BEFF;
-    
+    color: #F2BEFF; 
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -473,29 +436,24 @@ footer2{
     font-size: 28px;
     margin: 4px 2px;
     cursor: pointer;
-    
-
 }
 
 #button-get-chirp{
     position: absolute;
     left: 4.38%;
     top: 829px;
-    
 }
 
 #button-get-started{
     position: absolute;
     left: 4.38%;
     top: 829px;
-
 }
 
 #button-contact-us{
     position: absolute;
     left: 17.5%;
     top: 829px;
-
 }
 
 #button-send-business{
@@ -503,7 +461,13 @@ footer2{
     left: 0%;
     top: 953px;
     width: 30%;
+}
 
+#button-send-contact{
+    position: absolute;
+    left: 2%;
+    top: 350px;
+    width: 27%;
 }
 
 #business-background-1{
@@ -537,17 +501,15 @@ footer2{
     position: absolute;
     width: 15.78%;
     height: 70px;
-    left: 57.29%;
+    left: 58%;
     top: 106px;
-    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 39px;
     text-align: center;
     text-transform: lowercase;
-    
     color: #FE6C2C;
 }
 
@@ -569,14 +531,38 @@ footer2{
     color: #3E3E3E;
 }
 
-.contact-form{
+.business-contact-form{
     position:absolute;
+    width:50%;
     padding: 12px 20px;
-    left:57.29%;
+    left: 57.29%;
     top: 150px;
-    /* writing-mode: vertical-rl; */
     text-orientation: upright;
 }
+
+.contact-form{
+    position:absolute;
+    width:50%;
+    padding: 12px 20px;
+    left: 2.75%;
+    top: 590px;
+    vertical-align: auto;
+    text-orientation: upright;
+}
+
+input, select, textarea {
+    border-radius: 11px;
+    border: 2px solid #8d8d8d;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 8px;
+    margin-top: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+  }
 
 #contact-us-header{
     position: absolute;
@@ -584,7 +570,6 @@ footer2{
     height: 144px;
     left: 68px;
     top: 250px;
-
     font-family: 'Inder';
     font-style: normal;
     font-weight: 400;
@@ -593,9 +578,7 @@ footer2{
     display: flex;
     align-items: center;
     text-transform: uppercase;
-
     color: #FE6C2C;
-
 }
 
 #contact-us-header-2{
@@ -604,13 +587,10 @@ footer2{
     height: 200px;
     left: 74px;
     top: 380px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
-    
-
     color: #3E3E3E;
 }
